@@ -1,15 +1,3 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    overflow: hidden; /* Bu satırı ekledik */
-}
-
-#canvasContainer {
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Bu satırı ekledik */
-}
-
 #root {
     width: 100%;
     height: 100vh;
@@ -17,4 +5,17 @@ body, html {
 
 #root > .compose-web-column > div {
     position: relative;
+}
+
+.container {
+  font-size: 0; /* Çift boşluk sorununu engellemek için */
+}
+
+.container > div {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 16px; /* İçeriğin font boyutu */
+  vertical-align: top; /* İçerikleri üstte hizala */
 }
